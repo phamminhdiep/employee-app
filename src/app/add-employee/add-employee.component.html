@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="title">
+        <h1>Add new employee</h1>
+    </div>
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()" class="add-form">
+        <div class="input">
+            <input type="text" id="fullName" formControlName="fullName" placeholder="Fullname">
+            <div class="error-message"
+                *ngIf="employeeForm.controls.fullName.invalid && (employeeForm.controls.fullName.touched || submitted)">
+                Fullname contains only letters and has a minimum length of 2 characters!
+            </div>
+        </div>
+        <div class="input">
+            <input type="text" id="userName" formControlName="userName" placeholder="User Name">
+            <div class="error-message"
+                *ngIf="employeeForm.controls.userName.invalid && (employeeForm.controls.userName.touched || submitted)">
+                User name contains only alphanumeric characters and has a minimum length of 3 characters!
+            </div>
+        </div>
+        <div class="input">
+            <input type="password" id="password" formControlName="password" placeholder="Password">
+            <div class="error-message"
+                *ngIf="employeeForm.controls.password.invalid && (employeeForm.controls.password.touched || submitted)">
+                Password must contain at least one uppercase letter and one digit and has a minimum length of 8
+                characters!
+            </div>
+        </div>
+        <div class="input">
+            <input type="text" id="address" formControlName="address" placeholder="Address">
+            <div class="error-message"
+                *ngIf="employeeForm.controls.address.invalid && (employeeForm.controls.address.touched || submitted)">
+                Address has a minimum length of 5 characters!
+            </div>
+        </div>
+        <div class="input">
+
+            <input type="number" id="age" formControlName="age" placeholder="Age">
+            <div class="error-message" *ngIf="employeeForm.controls.age.invalid && (employeeForm.controls.age.touched || submitted)">
+                Age must be between 18 and 60!
+            </div>
+        </div>
+
+
+        <div class="buttons">
+            <button type="submit">Add</button>
+            <a [routerLink]="['/']">
+                <button class="return">Cancel</button>
+            </a>
+        </div>
+    </form>
+</div>

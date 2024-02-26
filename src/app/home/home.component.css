@@ -1,0 +1,133 @@
+.container{
+    font-size: 25px;
+    background-color: #362F4B;
+    color: white;
+    border-radius: 10px;
+    /* Adjust the value as needed */
+    overflow: hidden;
+}
+
+.title{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: #fff solid 1px;
+}
+
+.title h1{
+    width: 30%;
+}
+
+.title button{
+    margin-right: 55px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ECECEC;
+    
+}
+
+th {
+    font-size: 25px;
+    height: 50px;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 0px 8px 8px 20px;
+    background-color: #362F4B;
+    
+}
+
+td {
+    font-size: 25px;
+    font-weight: 500;
+    height: 50px;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 0px 8px 8px 20px;
+    color: #000;
+}
+
+.option {
+    text-align: center;
+}
+
+.id{
+    margin-left: 5%;
+    font-weight: 900;
+}
+
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+}
+
+
+
+.add{
+    width: 180px;
+    background-color: #4CAF50;
+    color: #fff
+}
+.add a{
+    text-decoration: none;
+    color: white;
+}
+.add:hover{
+    color: #4CAF50;
+    background-color: #fff;
+    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.edit {
+    background-color: blue;
+    color: #fff
+    
+}
+
+.edit a{
+    text-decoration: none;
+    color: white;
+}
+
+.edit:hover a{
+    color: blue;
+    transition: color 0.2s ease-in-out;
+}
+.edit:hover{
+    background-color: #fff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.delete {
+    background-color: red;
+    color: #fff
+}
+
+.edit:hover{
+    background-color: #fff;
+    color: blue;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.delete:hover{
+    background-color: #fff;
+    color: red;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}

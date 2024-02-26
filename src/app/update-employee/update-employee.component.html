@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="title">
+        <h1>Update Employee</h1>
+    </div>
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()" class="update-form">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" formControlName="id" readonly placeholder="Id">
+        </div>
+        <div class="input">
+            <label for="fullName">Fullname</label>
+            <input type="text" id="fullName" formControlName="fullName" placeholder="Fullname">
+            <div class="error-message"
+                *ngIf="employeeForm.controls.fullName.invalid && (employeeForm.controls.age.touched || submitted) ">
+                Fullname contains only letters and has a minimum length of 2 characters!
+            </div>
+           
+        </div>
+        <div class="input">
+            <label for="userName">Username</label>
+            <input type="text" id="userName" formControlName="userName" placeholder="User Name">
+            <div class="error-message"
+                *ngIf="employeeForm.controls.userName.invalid && (employeeForm.controls.age.touched || submitted) ">
+                User name contains only alphanumeric characters and has a minimum length of 3 characters!
+            </div>
+            
+        </div>
+        <div class="input">
+            <label for="password">Password</label>
+            <input type="password" id="password" formControlName="password">
+            <div class="error-message"
+                *ngIf="employeeForm.controls.password.invalid && (employeeForm.controls.age.touched || submitted) ">
+                Password must contain at least one uppercase letter and one digit and has a minimum length of 8
+                characters!
+            </div>
+            
+        </div>
+        <div class="input">
+            <label for="address">Address</label>
+            <input type="text" id="address" formControlName="address" placeholder="Password">
+            <div class="error-message"
+                *ngIf="employeeForm.controls.address.invalid && (employeeForm.controls.age.touched || submitted) ">
+                Address has a minimum length of 5 characters!
+            </div>
+            
+        </div>
+        <div class="input">
+            <label for="age">Age</label>
+            <input type="number" id="age" formControlName="age">
+            <div class="error-message"
+                *ngIf="employeeForm.controls.age.invalid && (employeeForm.controls.age.touched || submitted) ">
+                Age must be between 18 and 60!
+            </div>
+            
+        </div>
+        <div class="buttons">
+            <button type="submit" [disabled]="employeeForm.invalid">Update</button>
+            <a [routerLink]="['/']">
+                <button class="return">Cancel</button>
+            </a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "id": 4,
+      "userName": "phamminhdiep",
+      "fullName": "Phạm Minh Điệp",
+      "password": "@Diep1234",
+      "address": "Hanoi",
+      "age": 45
+    },
+    {
+      "id": 6,
+      "userName": "phamminhdiep",
+      "fullName": "Phạm Minh Điệp",
+      "password": "@JJ12414sa",
+      "address": "Hanoi",
+      "age": 45
+    },
+    {
+      "userName": "phamminhdiep",
+      "fullName": "Nguyễn Văn An",
+      "password": "diep1234D",
+      "address": "Hanoi",
+      "age": 22,
+      "id": 9
+    },
+    {
+      "userName": "phamminhdiep",
+      "fullName": "Phạm Minh Điệp",
+      "password": "diep1234@aA",
+      "address": "Hanoi",
+      "age": 22,
+      "id": 10
+    },
+    {
+      "userName": "phamminhdiep",
+      "fullName": "Phạm Minh Điệp",
+      "password": "diep1234A",
+      "address": "Hanoi",
+      "age": 34,
+      "id": 11
+    },
+    {
+      "userName": "phamminhdiep",
+      "fullName": "Phạm Minh Điệp",
+      "password": "diep1234@1A",
+      "address": "Hanoi",
+      "age": 34,
+      "id": 12
+    }
+  ]
+}

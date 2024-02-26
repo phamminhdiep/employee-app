@@ -1,0 +1,76 @@
+.container {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container .title {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    color: palevioletred;
+}
+
+.add-form {
+    width: 100%;
+}
+
+.add-form label {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.add-form input {
+    font-size: 25px;
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: none;
+    
+}
+
+.add-form input:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    float: right;
+    margin-top: 20px;
+}
+
+.buttons button {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input{
+    border-bottom: 1px solid black;
+}

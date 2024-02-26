@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+body{
+    background-image: linear-gradient(to top right, #4658CF, #C551BF);
+    background-attachment: fixed;
+    margin: 100px 400px;
+}
+/* You can add global styles to this file, and also import other style files */

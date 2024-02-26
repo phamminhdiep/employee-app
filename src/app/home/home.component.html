@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="title">
+        <h1>Employees Manager</h1>
+        <a [routerLink]="['/add']">
+           <button class="add">New</button>
+        </a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th class="id">ID</th>
+                <th>Fullname</th>
+                <th>User Name</th>
+                <th>Password</th>
+                <th>Address</th>
+                <th>Age</th>
+                <th class="option">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employeeList">
+                <td class="id">{{ employee.id }}</td>
+                <td>{{ employee.fullName }}</td>
+                <td>{{ employee.userName }}</td>
+                <td>{{ employee.password }}</td>
+                <td>{{ employee.address }}</td>
+                <td>{{ employee.age }}</td>
+                <td class="option">
+                    <a [routerLink]="['/update',employee.id]"><button class="edit">Update</button></a>
+                    <button class="delete" *ngIf="employee.id" (click)="onDelete(employee.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
